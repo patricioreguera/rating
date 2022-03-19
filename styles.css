@@ -1,0 +1,122 @@
+* {
+  --primario: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --gray: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --blue-inter: hsl(213, 20%, 23%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --bk1: rgb(35, 40, 50);
+  --bk2: rgb(23, 30, 40);
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  color: var(--White);
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(
+    140deg,
+    var(--Very-Dark-Blue) 10%,
+    var(--bk2) 90%
+  );
+
+  align-items: center;
+  justify-content: center;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(180deg, var(--bk1) 54%, var(--bk2) 100%);
+  padding: 30px;
+  width: 300px;
+  min-height: 20%;
+  border-radius: 16px;
+  box-shadow: black 20px;
+}
+.fav {
+  width: 15px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--blue-inter);
+}
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+p {
+  color: var(--Medium-Grey);
+  margin: 0px 0px 10px;
+  font-size: 12px;
+  font-weight: 100;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px 20px;
+}
+.btn {
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: var(--blue-inter);
+  color: var(--gray);
+}
+.btn:hover {
+  color: var(--White);
+  background-color: var(--primario);
+}
+
+.btns {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  color: var(--White);
+  background-color: var(--primario);
+}
+.btns:hover {
+  color: var(--primario);
+  background-color: var(--White);
+}
+
+.btnselect {
+  border: 2px solid var(--primario);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: var(--Medium-Grey);
+  color: var(--White);
+}
+
+.step2 {
+  display: none;
+}
+
+.tks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h6 {
+  color: var(--primario);
+  background-color: var(--blue-inter);
+  padding: 10px;
+  width: 50%;
+  border-radius: 25px;
+  text-align: center;
+  margin: 19px 50px 0px;
+}
+
+.p2 {
+  text-align: center;
+}
